@@ -1,0 +1,30 @@
+{
+  "name": "@repo/custom-framework",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Custom framework",
+  "bin": {
+    "custom-framework": "bin/cli/cli.js"
+  },
+  "scripts": {
+    "build": "tsup lib --format esm --outDir bin"
+  },
+  "dependencies": {
+    "@hattip/polyfills": "^0.0.35",
+    "@vitejs/plugin-react": "^4.2.1",
+    "h3": "^1.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-streaming": "^0.3.18",
+    "serve-static": "^1.15.0",
+    "typescript": "^5.3.3",
+    "vike": "^0.4.150",
+    "vite": "^5.0.9"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.17",
+    "@types/serve-static": "^1.15.5",
+    "tsup": "^8.0.1"
+  }
+}
