@@ -15,7 +15,7 @@ import {
 } from "h3";
 import serveStatic from "serve-static";
 import { renderPage } from "vike/server";
-import { viteConfig } from "../vite-config";
+import { viteConfig } from "../../core/vike/vite-config";
 
 installWhatwgNodeFetch();
 installGetSetCookie();
@@ -26,7 +26,7 @@ const __dirname = dirname(__filename);
 const isProduction = process.env["NODE_ENV"] === "production";
 const root = __dirname;
 
-export const getServer = async () => {
+export const getPopkornServer = async () => {
   const app = createApp();
 
   if (isProduction) {

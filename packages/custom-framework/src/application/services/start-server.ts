@@ -1,15 +1,13 @@
+import { Server } from "node:http";
 import installCrypto from "@hattip/polyfills/crypto";
 import installGetSetCookie from "@hattip/polyfills/get-set-cookie";
 import installWhatwgNodeFetch from "@hattip/polyfills/whatwg-node";
-import { getServer } from "./get-server";
 
 installWhatwgNodeFetch();
 installGetSetCookie();
 installCrypto();
 
-export async function startServer({ port }: { port: number }) {
-  const server = await getServer();
-
+export async function startServer(server: Server, { port }: { port: number }) {
   server.listen(port)
 
   server.on("listening", () => {

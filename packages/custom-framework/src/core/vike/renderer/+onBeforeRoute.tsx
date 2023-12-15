@@ -4,7 +4,7 @@ export const onBeforeRoute: OnBeforeRouteAsync = async (_pageContext): ReturnTyp
   return {
     pageContext: {
       _Page: () => <div>hello</div>,
-      _pageId: '/pages/_',
+      _pageId: '/core/vike/pages/_',
     },
   }
 }

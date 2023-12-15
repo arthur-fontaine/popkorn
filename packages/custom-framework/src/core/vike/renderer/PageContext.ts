@@ -3,7 +3,7 @@ declare global {
   namespace Vike {
     interface PageContext {
       _Page: Page
-      _pageId: '/pages/_'
+      _pageId: '/core/vike/pages/_'
     }
   }
 }
